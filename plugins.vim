@@ -49,7 +49,7 @@ call plug#begin('~/.vim/plugged')
 		" ======
 		" Python
 		" ======
-		Plug 'jeetsukumaran/vim-pythonsense' " python text objects and motions https://github.com/jeetsukumaran/vim-pythonsense
+		"Plug 'jeetsukumaran/vim-pythonsense' " python text objects and motions https://github.com/jeetsukumaran/vim-pythonsense
 
 		" Currently Deactivated
 		" Plug 'jreybert/vimagit' " Vim git extension
