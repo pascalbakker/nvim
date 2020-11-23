@@ -6,6 +6,7 @@ My nvim files. It has some asethetic updates and tools to make vim more cozy. I 
 
 
 **Theme**: Gruvbox
+
 **Plugin Manager**: VimPlug
 
 ## Plugins
