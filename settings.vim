@@ -11,6 +11,7 @@ colorscheme gruvbox
 " General Settings
 " filetype plugin indent on
 set splitbelow
+set modifiable
 set number
 set cursorline
 set tabstop=4
@@ -79,3 +80,9 @@ au BufNewFile,BufRead *.py
     \ set tabstop=4
     \ set softtabstop=4
     \ set shiftwidth=4
+
+" 24 bit color
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+

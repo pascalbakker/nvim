@@ -15,8 +15,34 @@ inoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+" Zoom / Restore window.
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+nnoremap <silent> <C-A> :ZoomToggle<CR>
+
+" resize
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif
+
+" remap terminal exit
+tnoremap <Esc> <C-\><C-n>
+
 " NERDtree hotkey
 		map <silent> <C-z> :NERDTreeToggle<CR>
+" FZF hotkey (next to nerdtree)
+nnoremap <C-x> : <C-u>FZF<CR>
 " Searching turn off
 		nnoremap <leader><space> :nohlsearch<CR>
 " Close code block
