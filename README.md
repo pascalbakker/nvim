@@ -1,5 +1,5 @@
 # nvim
-[](screenshot.png)
+![](screenshot.png)
 
 My nvim files. It has some asethetic updates and tools to make vim more cozy. 
 
