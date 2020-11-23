@@ -1,10 +1,12 @@
 # nvim
+
+My nvim files. It has some asethetic updates and tools to make vim more cozy. I mostly code in Scala, Java, and Python.
+
 ![](screenshot.png)
 
-My nvim files. It has some asethetic updates and tools to make vim more cozy. 
 
-Theme: Gruvbox
-Plugin Manager: VimPlug
+**Theme**: Gruvbox
+**Plugin Manager**: VimPlug
 
 ## Plugins
 
