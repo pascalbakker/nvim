@@ -4,6 +4,17 @@
 inoremap jj <Esc>
 let mapleader = ","
 
+" Haskell IDE
+"nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+"map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
+"map <Leader>lg :call LanguageClient#textDocument_definition()<CR>
+"map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
+"map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
+"map <Leader>lb :call LanguageClient#textDocument_references()<CR>
+"map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
+"map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+
+
 " Disable arrow keys
 nnoremap <left> <nop>
 nnoremap <right> <nop>
@@ -177,4 +188,3 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 autocmd FileType java map <buffer> <F4> :!mvn compile <cr>
 " C++ make
 nnoremap <F4> :make!<cr>
-
