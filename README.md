@@ -1,6 +1,6 @@
 # nvim
 
-My nvim files. It has some asethetic updates and tools to make vim more cozy. I mostly code in Scala, Java, and Python.
+My nvim files. I am trying to make nvim my main programming editor. All plugins I install try to make vim more IDE like and cozy.I mostly code in Scala, Python, Rust, and sometimes C.
 
 **Language Server**
 
