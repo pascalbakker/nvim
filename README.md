@@ -20,8 +20,6 @@ I use Coc for my language server. Install a language via :CocInstall
 | Name | Description |
 |---|---|
 | Coc | For autocompleltion |
-~~| semshi| Syntax Highlighting[Not used]|~~
-~~| haskell-vim | Haskell syntax highlighting|~~
 | vim-polgot | |
 | FZF | for fuzzy searching|
 | traces | Highlights regex patterns|
