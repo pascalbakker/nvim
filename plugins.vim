@@ -11,7 +11,6 @@ call plug#begin('~/.vim/plugged')
 		"Plug 'rust-lang/rust.vim' "Rust
 		Plug 'PotatoesMaster/i3-vim-syntax' " Adds syntax highlighting for i3 config
 		Plug 'dense-analysis/ale' " https://github.com/dense-analysis/ale
-"		Plug 'dag/vim-fish' " Fish Syntax Plug
 
 		" =========
 		" Utilities
