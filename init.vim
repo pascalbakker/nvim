@@ -13,5 +13,4 @@ source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/dap.vim
 source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/coc_mappings.vim
-source $HOME/.config/nvim/fish.vim
 source $HOME/.config/nvim/fzf.vim
