@@ -4,6 +4,17 @@
 inoremap jj <Esc>
 let mapleader = ","
 
+" Haskell IDE
+"nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+"map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
+"map <Leader>lg :call LanguageClient#textDocument_definition()<CR>
+"map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
+"map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
+"map <Leader>lb :call LanguageClient#textDocument_references()<CR>
+"map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
+"map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+
+
 " Disable arrow keys
 nnoremap <left> <nop>
 nnoremap <right> <nop>
@@ -15,8 +26,34 @@ inoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+" Zoom / Restore window.
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+nnoremap <silent> <C-A> :ZoomToggle<CR>
+
+" resize
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif
+
+" remap terminal exit
+tnoremap <Esc> <C-\><C-n>
+
 " NERDtree hotkey
 		map <silent> <C-z> :NERDTreeToggle<CR>
+" FZF hotkey (next to nerdtree)
+nnoremap <C-x> : <C-u>FZF<CR>
 " Searching turn off
 		nnoremap <leader><space> :nohlsearch<CR>
 " Close code block
@@ -152,3 +189,6 @@ autocmd FileType java map <buffer> <F4> :!mvn compile <cr>
 " C++ make
 nnoremap <F4> :make!<cr>
 
+" Latex make
+map I :! pdflatex %<CR><CR>
+map S :! mupdf $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>
