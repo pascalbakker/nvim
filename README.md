@@ -1,3 +1,5 @@
+# Note: Repo has been moved to: https://github.com/pascalbakker/dotfiles
+
 # nvim
 
 My nvim files. I am trying to make nvim my main programming editor. All plugins I install try to make vim more IDE like and cozy.I mostly code in Scala, Python, Rust, and sometimes C.
